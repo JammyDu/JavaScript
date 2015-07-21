@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+	<table border=1>
+		<tr>
+			<td>值1</td>
+			<td>
+					<input id="txtValue1" type="text" />
+			</td>
+		</tr>
+		<tr>
+		    <td>值2</td>
+			<td>
+			        <input id="txtValue2" type="text"/>
+			</td>
+		</tr>
+		<tr>
+		    <td>计算结果</td>
+			<td>
+			<p id="jieguo"></p>
+			</td>
+		</tr>
+		<tr>
+		    <td>
+				<input type="button" value="计算" onclick="jisuan();"/>
+			</td>
+			<td>
+				<input type="button" value="重置" onclick="chongzhi();"/>
+			</td>
+		</tr>
+	</table>
+	<script>
+	function jisuan()
+	{
+		var x,y,z;
+		//
+		x=document.getElementById("txtValue1").value;
+		//alert(x);
+		y=document.getElementById("txtValue2").value;
+		//alert(y);
+		
+		//
+		z=x*y;
+		
+		//
+		document.getElementById("jieguo").innerHTML=z;
+		
+		var d=document;
+		var p= d.getElementById("jieguo");
+		p.InnerHTML=z;
+		
+	   var t=document.getElementById("jieguo");
+	   t.InnerHTML=z;
+		//alert(z);
+	}
+	function chongzhi()
+	{
+
+		document.getElementById("txtValue1").value="";
+		document.getElementById("txtValue2").value="";
+		document.getElementById("jieguo").innerHTML="";
+	}
+	</script>
+</body>
+</html>
