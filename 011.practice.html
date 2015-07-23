@@ -2,7 +2,7 @@
 <html>
 <body>
 <script>
-var box=100;
+/*var box=100;
 if (box>50 );
 {
    alert (100) ;
@@ -18,6 +18,29 @@ case 2:
 alert('two');
 break;
 }*/
+/*function box(name,age){
+     alert('我的名字；'+name+'，我的年龄：'+age);
+}
+box('杜娟'，20);*/
+/*function box(){
+var sum=0;
+for(var i=0;i<arguments.length;i++){
+sum+=arguments[i];
+}
+return sum;
+}
+alert(box(5,6));*/
+function box(obj){
+  alert(obj.name);
+  alert(obj.age);
+  alert(obj.height);
+}
+var obj={
+name:"杜娟",
+age:20,
+height:162,
+};
+ box(obj);
 </script>
 </body>
 </html>
